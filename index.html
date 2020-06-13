@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevXavier Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- INTRODUCTION -->
+    <section class="introBack">
+        <div class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hello, I am <strong>Xavier Jaramillo</strong>
+            </h1>
+
+            <p class="section__subtitle section__subtitle--intro">Developer & Network administrator.</p>
+
+            <img src="img/xavi.png" alt="a picture of Xavier Jaramillo smiling" class="section__intro--img">
+        </div>
+    </section>
+
+    <!-- MAIN DIV -->
+    <div class="prueba">
+        <!-- MY SERVICES -->
+        <section class="my-services" class="services">
+            <h2 class="section__title section__title--services">What can I do?</h2>
+
+            <div class="services">
+                <div class="service">
+                    <h3>Develop multi-platform applications</h3>
+                    <p>I learned to work developing, implementing, documenting and maintaining multi-platform computer applications in all companies in the sector.</p>
+                </div>
+
+                <div class="service">
+                    <h3>Manage networked computer systems</h3>
+                    <p>These studies taught me how to configure, manage and maintain computer systems and ensure system functionality, integration and services.</p>
+                </div>
+            </div>
+
+            <a href="#work" class="btn">My Work</a>
+            <a href="download/cvXavierJaramillo.pdf" target="_blank" class="btn">Check CV</a>
+        </section>
+
+        <!-- ABOUT ME-->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">About me</h2>
+
+            <div class="about-me__body">
+                <p>My name is Xavier Jaramillo Vives. I am a programmer and network administrator without much experience but with a great desire to learn and continue training to be more competent.</p>
+                <p>The world of programming has always attracted my attention, which is why I have been training in this field for three years now.</p>
+            </div>
+
+            <img src="img/xaviPC.png" alt="Xavier Jaramillo learning" class="about-me__img">
+        </section>
+
+        <!-- MY WORK -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work.</p>
+
+            <div class="portfolio">
+                <a href="portfolio-asix.html" class="portfolio__item">
+                    <img src="img/gns3.png" alt="" class="portfolio__img">
+                </a>
+
+                <a href="portfolio-dam.html" class="portfolio__item">
+                    <img src="img/bbb.png" alt="" class="portfolio__img">
+                </a>
+
+                <a href="portfolio-cv.html" class="portfolio__item">
+                    <img src="img/logo2.png" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://github.com/XavierJaramillo" target="_blank" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/xavier-jaramillo-vives-44b612182/" target="_blank" class="social-list__link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="mailto:xavijvives@gmail.com" target="_blank" class="social-list__link">
+                    <i class="fas fa-envelope-open-text"></i>
+                </a>
+            </li>
+        </ul>
+        <p>© 2020 Xavier Jaramillo. All rights reserved.</p>
+    </footer>
+
+    <!-- SCROLL TO TOP-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
