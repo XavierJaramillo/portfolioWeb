@@ -258,16 +258,20 @@ header {
 /* Intro section */
 
 .intro {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.introBack {
-    padding-top: 9em;
     background-image: url(../img/galaxy.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 55em;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+.section__title--intro {
+    justify-self: right;
+}
+
+.section__intro--img {
+    max-width: 100%;
+    height: auto;
 }
 
 .section__title {
@@ -276,24 +280,22 @@ header {
 
 @media (min-width: 600px) {
     .intro {
-        height: 100vh;
         display: grid;
-        grid-column-gap: 1em;
-        grid-template-areas: "title title" "subtitle img";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "title img" "tile img";
     }
     .section__intro--img {
         grid-area: img;
-        position: relative;
     }
     .section__subtitle--intro {
         grid-area: subtitle;
         position: relative;
     }
     .section__title--intro {
+        margin: 15px;
+        padding-top: 10em;
         grid-area: title;
         position: relative;
+        justify-items: right;
     }
 }
 
