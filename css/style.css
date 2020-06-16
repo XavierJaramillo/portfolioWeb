@@ -5,9 +5,6 @@
 }
 
 
-/* COUTO PITO */
-
-
 /* Custom properties */
 
 :root {
@@ -48,6 +45,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 section {
@@ -266,6 +264,7 @@ header {
     background-attachment: fixed;
     grid-template-columns: auto auto;
     justify-items: center;
+    padding: 15px 15px 0px 15px;
 }
 
 .section__title--intro {
@@ -273,7 +272,7 @@ header {
 }
 
 .section__intro--img {
-    max-width: 100%;
+    max-width: auto;
     height: auto;
 }
 
@@ -287,6 +286,7 @@ header {
         grid-template-areas: "title img" "tile img";
     }
     .section__intro--img {
+        max-width: fit-content;
         grid-area: img;
     }
     .section__subtitle--intro {
@@ -295,7 +295,7 @@ header {
     }
     .section__title--intro {
         margin: 15px;
-        padding-top: 10em;
+        padding-top: 8em;
         grid-area: title;
         position: relative;
         justify-items: right;
@@ -356,40 +356,44 @@ header {
 /*  ABOUT ME   */
 
 .about-me {
-    max-width: 1000px;
-    margin: 0 auto;
+    background-size: cover;
+    padding: 15px 15px 0px 15px;
 }
 
 .about-me h2 {
+    margin-top: 45px;
     color: var(--clr-dark);
+    text-align: center;
 }
 
-@media (min-width: 600px) {
+.about-me__body {
+    text-align: justify;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
+
+.about-me__img {
+    justify-self: center;
+}
+
+@media (min-width: 800px) {
     .about-me {
-        height: 55em;
         display: grid;
-        grid-template-columns: 1;
-        grid-template-areas: "title title" "subtitle img" "text img";
-        grid-column-gap: 2em;
+        grid-template-areas: "title" "subtitle" "img";
     }
     .section__title--about {
         grid-area: title;
     }
-    .section__subtitle--about {
-        grid-area: text;
-        grid-column: 1 / -1;
-        grid-row: 1;
+    .about-me__body {
+        margin-right: 12em;
+        margin-left: 12em;
+        grid-area: subtitle;
         position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
     }
     .about-me__img {
         grid-area: img;
         position: relative;
-        z-index: 2;
-        bottom: -20em;
+        max-width: fit-content;
     }
 }
 
