@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleASIX.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <!-- HEADER -->
     <header>
         <div class="logo">
-            <img src="img/logo3.png" alt="">
+            <img src="img/logo.png" alt="">
         </div>
 
         <button class="nav-toggle" aria-label="toggle navigation">
@@ -25,55 +25,65 @@
 
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-                <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
-                <li class="nav__item"><a href="index.html#work" class="nav__link">My work</a></li>
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My work</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- INTRODUCTION -->
-    <section class="intro">
-        <h1 class="section__title section__title--intro">
-            ASIX project:<strong>Creation of a network</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">Emulation with gns3.</p>
-        <img src="img/gns3.png" alt="a picture of Xavier Jaramillo smiling" class="intro__img">
+    <section class="asix">
+        <div class="section__asixProject">
+            <h1>
+                ASIX project:
+            </h1>
+            <p class="section__subtitleProject"><strong>Creation of a network: </strong>Emulation with gns3.</p>
+        </div>
     </section>
 
-    <div class="portfolio__item-individual">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum possimus veritatis voluptatem incidunt modi nisi dolore, cum hic laudantium assumenda iusto, ab earum ad ipsam est. Adipisci sapiente ut libero.</p>
+    <div class="projectResum">
+        <p>Couto gay</p>
         <img src="img/portfolio-details.jpg" alt="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur vitae nobis nemo, debitis est sed, id dolores nihil dolor odio omnis repellat a magni accusantium laborum mollitia harum? Laudantium, sint.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis atque adipisci fugit doloribus quis iusto cum. Sit cumque est nobis, placeat recusandae blanditiis eligendi, quod sint unde delectus distinctio praesentium!</p>
+        <div class="row">
+            <div class="column">
+                <img src="img/linux.png" alt="linux operating sistem logo." class="linux" style="width:55%">
+            </div>
+            <div class="column">
+                <img src="img/virtualbox.png" alt="virtualbox logo" class="vb" style="width:55%">
+            </div>
+            <div class="column">
+                <img src="img/vmware.png" alt="vmware logo" class="wmw" style="width:55%">
+            </div>
+        </div>
     </div>
 
 
     <!-- FOOTER -->
     <footer class="footer">
-        <a href="xavijvives@gmail.com" class="footer__link">xavijvives@gmail.com</a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a href="https://github.com" class="social-list__link">
+                <a href="https://github.com/XavierJaramillo" target="_blank" class="social-list__link">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a href="https://linkedin.com" class="social-list__link">
+                <a href="https://www.linkedin.com/in/xavier-jaramillo-vives-44b612182/" target="_blank" class="social-list__link">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a href="https://linkedin.com" class="social-list__link">
+                <a href="mailto:xavijvives@gmail.com" target="_blank" class="social-list__link">
                     <i class="fas fa-envelope-open-text"></i>
                 </a>
             </li>
         </ul>
+        <p>© 2020 Xavier Jaramillo. All rights reserved.</p>
     </footer>
-
-    <script src="js/index.js"></script>
-
+    <script src="js/secondary.js"></script>
 </body>
 
 </html>
