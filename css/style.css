@@ -5,9 +5,9 @@
     --ff-secondary: 'Roboto Slab', serif;
     --fw-reg: 400;
     --fw-bold: 700;
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-light: #c5f3ff;
+    --clr-dark: #1c2838;
+    --clr-accent: #00f7ff;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -32,8 +32,6 @@ html {
 }
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
     margin: 0px;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -100,6 +98,7 @@ h1 {
 
 h2 {
     font-size: var(--fs-h2);
+    margin-bottom: 15px;
 }
 
 h3 {
@@ -119,10 +118,10 @@ h3 {
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--intro,
-.section__subtitle--about {
-    background: var(--clr-accent);
-    padding: .25em 1em;
+.section__subtitle--intro {
+    background-color: var(--clr-accent);
+    color: var(--clr-dark);
+    margin-top: 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
@@ -140,7 +139,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background-color: var(--clr-dark);
+    background-color: #212121;
 }
 
 .logo {
@@ -151,7 +150,7 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
+    background: #212121;
     color: var(--clr-light);
     top: 0;
     bottom: 0;
@@ -253,7 +252,7 @@ header {
 /* MAIN DIV */
 
 .mainDIV {
-    margin: 1em;
+    margin: 2.5em;
 }
 
 
@@ -262,17 +261,22 @@ header {
 .intro {
     background-color: #212121;
     min-height: 93vh;
-    padding-top: 5em;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
 }
 
 .intro-content {
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-around;
 }
 
-.coder-image {}
+.coder-image {
+    justify-items: right;
+}
 
 .section__title {
     color: var(--clr-light);
@@ -280,10 +284,9 @@ header {
     margin-right: 15px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 805px) {
     .intro-content {
         grid-template-columns: auto;
-        vertical-align: top;
     }
 }
 
@@ -291,15 +294,13 @@ header {
 /* My services section */
 
 .my-services {
-    background-color: var(--clr-dark);
-    background-image: url(../img/setup.jpg);
-    height: 55em;
-    background-size: cover;
-    background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
-    padding-top: 11em;
-    border-radius: 35px;
+    height: auto;
+    margin-bottom: 5em;
+    border: 5px solid;
+    border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+    box-shadow: 0 13px 50px black, inset 0 0 25px white;
 }
 
 .section__title--services {
@@ -343,22 +344,20 @@ header {
 /*  ABOUT ME   */
 
 .about-me {
-    background-size: cover;
-    padding: 15px 15px 0px 15px;
-    border-radius: 35px;
-    background-image: url(/portfolioWeb/img/galaxy.jpg);
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 5em;
+    border: 5px solid;
+    border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+    box-shadow: 0 13px 50px black, inset 0 0 25px white;
 }
 
 .about-me h2 {
-    margin-top: 45px;
-    color: var(--clr-dark);
+    color: var(--clr-accent);
     text-align: center;
 }
 
 .about-me__body {
     text-align: justify;
+    color: var(--clr-light);
     margin-right: 1.5em;
     margin-left: 1.5em;
 }
@@ -392,30 +391,29 @@ header {
 /* PORTFOLIO SECTION */
 
 .my-work {
-    height: 55em;
-    background-color: var(--clr-dark);
-    background-image: url(../img/portfolio-details.jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
+    height: auto;
     color: var(--clr-light);
     text-align: center;
-    padding-top: 11em;
-    border-radius: 35px;
+    border: 5px solid;
+    border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+    box-shadow: 0 13px 50px black, inset 0 0 25px white;
 }
 
 .portfolio {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .portfolio__item {
-    overflow: hidden;
-    margin: 15px;
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
 }
 
 .portfolio__img {
     border-radius: 25em;
+    width: 100%;
+    height: auto;
 }
 
 .portfolio__item:focus {
